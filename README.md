@@ -166,7 +166,7 @@ Follow these steps to set up AlgoVision on your local machine:
 #### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/algovision.git
+git clone https://github.com/dustin04x/algovision.git
 cd algovision
 ```
 
