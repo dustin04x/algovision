@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Interactive-looking background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#3b0764" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#e879f9" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base canvas -->
+  <rect width="256" height="256" rx="60" fill="url(#bgGrad)" />
+
+  <!-- Abstract node lines mimicking algorithm paths -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 60 128 L 128 60 L 196 128 L 128 196 Z" />
+    <path d="M 128 60 L 128 196" />
+    <path d="M 60 128 L 196 128" />
+  </g>
+
+  <!-- Glowing core nodes -->
+  <circle cx="128" cy="60" r="16" fill="url(#glowGrad)" filter="url(#glow)" />
+  <circle cx="60" cy="128" r="16" fill="url(#glowGrad)" filter="url(#glow)" />
+  <circle cx="196" cy="128" r="16" fill="url(#glowGrad)" filter="url(#glow)" />
+  <circle cx="128" cy="196" r="16" fill="url(#glowGrad)" filter="url(#glow)" />
+  
+  <!-- Central emphasis -->
+  <circle cx="128" cy="128" r="28" fill="#ffffff" filter="url(#glow)" />
+  <circle cx="128" cy="128" r="12" fill="#4c1d95" />
+</svg>
