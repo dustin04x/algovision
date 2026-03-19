@@ -1,3 +1,11 @@
+# AlgoVision
+
+<h1 align="center">
+  <img src="public/logo.svg" alt="AlgoVision Logo" width="120" />
+  <br />
+  <strong>Advanced Algorithm Visualizer</strong>
+</h1>
+
 <div align="center">
   
   <h1>✨ AlgoVision ✨</h1>
@@ -33,7 +41,13 @@
 - ⏱️ **Interactive Playback Controls:** A sleek, pill-shaped control bar allows you to play, pause, and step through algorithms at your own pace.
 - 🛠️ **Live Execution State:** Real-time variable tracking and glowing pseudocode highlights precisely what the algorithmic engine is doing right now.
 
-## 🛠️ Built With
+| Feature | Description |
+|---------|-------------|
+| **Interactive Step-by-Step Visualization** | Observe algorithms one operation at a time with precise control over execution speed |
+| **Variable Speed Control** | Transition seamlessly between rapid overviews and methodical examinations |
+| **Custom Data Input** | Provide your own arrays, graphs, or tree structures for personalized learning |
+| **Performance Analytics** | View detailed metrics including comparisons, swaps, and space complexity analysis |
+| **Real-time Graphs** | Visualize operation distribution with dynamic performance charts |
 
 - **Frontend Framework:** [React](https://reactjs.org/)
 - **Build Tool:** [Vite](https://vitejs.dev/)
@@ -66,4 +80,25 @@ You'll need Node.js and a package manager like `npm` or `yarn` installed.
 
 ## 📜 License
 
-This project is proprietary.
+This project is proprietary and all rights are reserved. Usage, modification, and distribution require explicit written permission from the project maintainers.
+
+```text
+Copyright (c) 2025 AlgoVision. All rights reserved.
+
+Proprietary License - All use is subject to the Terms of Service
+agreed to upon accessing or using this software.
+```
+
+For licensing inquiries, please contact: license@algovision.dev
+
+---
+
+<div align="center">
+
+**Made with ❤️ by the AlgoVision Team**
+
+[![GitHub Stars](https://img.shields.io/github/stars/your-username/algovision?style=social)](https://github.com/your-username/algovision)
+[![GitHub Forks](https://img.shields.io/github/forks/your-username/algovision?style=social)](https://github.com/your-username/algovision)
+[![Twitter Follow](https://img.shields.io/twitter/follow/algovision?style=social)](https://twitter.com/algovision)
+
+</div>
