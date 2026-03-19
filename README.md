@@ -10,6 +10,7 @@
   
   <h1>✨ AlgoVision ✨</h1>
   <p><strong>Premium, Interactive Algorithm Visualizer</strong></p>
+  <p>Created by <a href="https://github.com/dustin04x"><strong>@dustin04x</strong></a></p>
   
   <a href="https://algovision-nine.vercel.app">
     <img src="https://img.shields.io/badge/Live_Demo-algovision--nine.vercel.app-1989360?style=for-the-badge&logo=vercel" alt="Live Demo" />
@@ -97,8 +98,6 @@ For licensing inquiries, please contact: license@algovision.dev
 
 **Made with ❤️ by the AlgoVision Team**
 
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/algovision?style=social)](https://github.com/your-username/algovision)
-[![GitHub Forks](https://img.shields.io/github/forks/your-username/algovision?style=social)](https://github.com/your-username/algovision)
-[![Twitter Follow](https://img.shields.io/twitter/follow/algovision?style=social)](https://twitter.com/algovision)
+[![GitHub Stars](https://img.shields.io/github/stars/your-username/algovision?style=social)](https://github.com/dustin04x/algovision)
 
 </div>

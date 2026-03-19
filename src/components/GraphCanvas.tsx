@@ -249,7 +249,7 @@ export const GraphCanvas: React.FC = () => {
         onMouseLeave={handleMouseUp}
         onContextMenu={handleContextMenu}
       />
-      <div className="absolute bottom-24 left-6 flex flex-wrap max-w-sm items-center gap-3 text-xs text-muted-foreground font-mono bg-background/50 backdrop-blur-sm p-3 rounded-lg border border-white/5">
+      <div className="absolute bottom-[100px] left-1/2 -translate-x-1/2 flex items-center justify-center gap-6 text-xs text-muted-foreground font-mono bg-background/50 backdrop-blur-sm px-6 py-2.5 rounded-full border border-white/5 shadow-lg whitespace-nowrap">
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full" style={{ background: nodeColorMap.start }} />Source
         </span>

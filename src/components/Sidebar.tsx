@@ -176,19 +176,12 @@ export const Sidebar: React.FC = () => {
         </button>
       </div>
 
-      {/* Run */}
+      {/* Graph Status */}
       {!isArrayAlgo && (
         <div className="p-4 mt-auto">
-          <div className="text-xs text-muted-foreground mb-2 font-mono">
+          <div className="text-xs text-muted-foreground font-mono bg-background/50 p-2 rounded-md border border-white/5">
             Source: <span className="text-primary">{sourceNode || '—'}</span> → Target: <span className="text-destructive">{targetNode || '—'}</span>
           </div>
-          <button
-            onClick={runVisualization}
-            disabled={!sourceNode}
-            className="w-full py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            Run Visualization
-          </button>
         </div>
       )}
     </div>
