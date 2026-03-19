@@ -12,14 +12,17 @@ const Index: React.FC = () => {
   const isArrayAlgo = ARRAY_ALGORITHMS.includes(selectedAlgorithm);
 
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden bg-background">
-      <div className="flex flex-1 min-h-0">
+    <div className="h-screen w-screen flex flex-col overflow-hidden bg-background relative">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background pointer-events-none" />
+      <div className="flex flex-1 min-h-0 p-4 gap-4 relative z-10">
         <Sidebar />
-        <div className="flex-1 flex flex-col min-w-0">
-          <div className="flex-1 min-h-0 bg-background/50">
+        <div className="flex-1 flex flex-col min-w-0 relative rounded-2xl border border-white/5 shadow-2xl bg-background/40 backdrop-blur-md overflow-hidden">
+          <div className="flex-1 min-h-0 relative">
             {isArrayAlgo ? <ArrayCanvas /> : <GraphCanvas />}
           </div>
-          <ControlBar />
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
+            <ControlBar />
+          </div>
         </div>
         <ExecutionPanel />
       </div>

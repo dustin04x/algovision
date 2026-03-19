@@ -12,21 +12,23 @@ export const ExecutionPanel: React.FC = () => {
   const step = currentStep >= 0 && currentStep < steps.length ? steps[currentStep] : null;
 
   return (
-    <div className="w-[350px] min-w-[350px] bg-card border-l border-border flex flex-col h-full overflow-hidden">
+    <div className="w-[350px] min-w-[350px] bg-card/60 backdrop-blur-xl border border-white/5 rounded-2xl shadow-xl flex flex-col h-full overflow-hidden">
       {/* Pseudocode */}
-      <div className="flex-1 min-h-0 border-b border-border flex flex-col">
-        <div className="px-4 py-3 border-b border-border">
-          <h2 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Pseudocode</h2>
+      <div className="flex-1 min-h-0 border-b border-border/50 flex flex-col">
+        <div className="px-5 py-4 border-b border-border/50 bg-background/30">
+          <h2 className="text-xs font-semibold text-foreground/80 uppercase tracking-wider">Pseudocode</h2>
         </div>
-        <div className="flex-1 overflow-y-auto scrollbar-thin p-3">
-          <pre className="text-xs leading-6 font-mono">
+        <div className="flex-1 overflow-y-auto scrollbar-thin p-4">
+          <pre className="text-[13px] leading-relaxed font-mono">
             {info.pseudocode.map((line, i) => {
               const isActive = step?.pseudocodeLine === i;
               return (
                 <div
                   key={i}
-                  className={`px-2 rounded transition-colors duration-150 ${
-                    isActive ? 'bg-warning/20 text-warning' : 'text-muted-foreground'
+                  className={`px-3 py-0.5 rounded transition-all duration-200 border-l-2 ${
+                    isActive 
+                      ? 'bg-primary/10 text-primary border-primary font-medium glow' 
+                      : 'border-transparent text-muted-foreground hover:text-foreground/80'
                   }`}
                 >
                   <span className="inline-block w-5 text-right mr-3 opacity-40 select-none">{i + 1}</span>

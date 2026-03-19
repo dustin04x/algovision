@@ -6,59 +6,60 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 240 10% 4%; /* Very deep sleek dark background #09090b */
+    --foreground: 0 0% 98%;
 
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 10% 8%; /* Slightly lighter for cards */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 198 93% 60%;
+    --primary: 198 93% 60%; /* Vibrant cyan/blue */
     --primary-foreground: 222 47% 11%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 215 25% 63%;
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 240 5% 65%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 25% 63%;
+    --muted: 240 10% 10%;
+    --muted-foreground: 240 5% 60%;
 
-    --accent: 217 33% 22%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 240 10% 15%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 350 89% 60%; /* Punchy red */
+    --destructive-foreground: 0 0% 98%;
 
-    --success: 160 84% 39%;
-    --success-foreground: 210 40% 98%;
+    --success: 150 84% 45%; /* Vibrant emerald */
+    --success-foreground: 0 0% 98%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 222 47% 11%;
+    --warning: 45 93% 55%; /* Rich gold/yellow */
+    --warning-foreground: 240 10% 4%;
 
-    --border: 217 33% 22%;
-    --input: 217 33% 22%;
+    --border: 240 10% 15%; /* Subtle borders */
+    --input: 240 10% 15%;
     --ring: 198 93% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Larger border radius for premium feel */
 
-    --sidebar-background: 217 33% 17%;
-    --sidebar-foreground: 215 25% 63%;
+    --sidebar-background: 240 10% 6%;
+    --sidebar-foreground: 240 5% 65%;
     --sidebar-primary: 198 93% 60%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 217 33% 22%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 22%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 10% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 10% 15%;
     --sidebar-ring: 198 93% 60%;
 
-    --dot-grid: hsla(217, 33%, 30%, 0.4);
-    --node-default: 215 25% 63%;
-    --node-active: 38 92% 50%;
-    --node-visited: 160 84% 39%;
+    /* Rich, vibrant specific colors */
+    --dot-grid: hsla(240, 10%, 25%, 0.4);
+    --node-default: 240 5% 65%;
+    --node-active: 45 93% 55%;
+    --node-visited: 150 84% 45%;
     --node-path: 198 93% 60%;
-    --edge-default: 217 33% 30%;
-    --edge-active: 38 92% 50%;
-    --edge-visited: 160 84% 39%;
+    --edge-default: 240 10% 30%;
+    --edge-active: 45 93% 55%;
+    --edge-visited: 150 84% 45%;
   }
 }
 

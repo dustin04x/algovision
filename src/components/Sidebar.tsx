@@ -42,7 +42,7 @@ export const Sidebar: React.FC = () => {
   const isArrayAlgo = ARRAY_ALGORITHMS.includes(selectedAlgorithm);
 
   return (
-    <div className="w-[280px] min-w-[280px] bg-card border-r border-border flex flex-col h-full overflow-y-auto scrollbar-thin">
+    <div className="w-[280px] min-w-[280px] bg-card/60 backdrop-blur-xl border border-white/5 rounded-2xl shadow-xl flex flex-col h-full overflow-y-auto scrollbar-thin">
       {/* Header */}
       <div className="p-4 border-b border-border">
         <h1 className="text-sm font-semibold text-foreground tracking-wide">AlgoVision</h1>
@@ -177,20 +177,20 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Run */}
-      <div className="p-4 mt-auto">
-        {!isArrayAlgo && (
+      {!isArrayAlgo && (
+        <div className="p-4 mt-auto">
           <div className="text-xs text-muted-foreground mb-2 font-mono">
             Source: <span className="text-primary">{sourceNode || '—'}</span> → Target: <span className="text-destructive">{targetNode || '—'}</span>
           </div>
-        )}
-        <button
-          onClick={runVisualization}
-          disabled={!isArrayAlgo && !sourceNode}
-          className="w-full py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-        >
-          Run Visualization
-        </button>
-      </div>
+          <button
+            onClick={runVisualization}
+            disabled={!sourceNode}
+            className="w-full py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            Run Visualization
+          </button>
+        </div>
+      )}
     </div>
   );
 };

@@ -30,27 +30,28 @@ export const ArrayCanvas: React.FC = () => {
     };
 
     return (
-        <div className="w-full h-full flex flex-col p-8 overflow-hidden">
+        <div className="w-full h-full flex flex-col pt-8 px-8 pb-32 overflow-hidden">
             <div className="flex-1 flex items-end justify-center gap-2">
                 {arrayToRender.map((value, index) => {
                     const heightPercent = Math.max((value / maxVal) * 100, 5); // min 5% height
                     const color = getBarColor(index);
 
                     return (
-                        <div key={index} className="flex flex-col items-center flex-1 max-w-[60px] group">
+                        <div key={index} className="flex flex-col justify-end items-center flex-1 h-full max-w-[60px] group">
                             <span className="mb-2 text-xs font-mono font-medium text-foreground opacity-80 group-hover:opacity-100 transition-opacity">
                                 {value}
                             </span>
                             <div
                                 className="w-full rounded-t-md transition-all duration-300 ease-in-out relative shadow-sm"
                                 style={{
-                                    height: `${heightPercent}%`,
+                                    height: `calc(${heightPercent}% - 24px)`, // Subtract space for the text label above
+                                    minHeight: '4px',
                                     backgroundColor: color,
                                 }}
                             >
                                 {/* Optional glow effect for active states */}
                                 {(color === COLOR_MAP.comparing || color === COLOR_MAP.swapping || color === COLOR_MAP.target) && (
-                                    <div className="absolute inset-0 rounded-t-md opacity-50 blur-sm" style={{ backgroundColor: color }} />
+                                <div className="absolute inset-0 rounded-t-md opacity-50 blur-sm mix-blend-screen" style={{ backgroundColor: color }} />
                                 )}
                             </div>
                         </div>

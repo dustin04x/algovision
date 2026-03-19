@@ -1,6 +1,12 @@
 <div align="center">
-  <h1>AlgoVision 🚀</h1>
-  <p><strong>Advanced Algorithm Visualizer</strong></p>
+  
+  <h1>✨ AlgoVision ✨</h1>
+  <p><strong>Premium, Interactive Algorithm Visualizer</strong></p>
+  
+  <a href="https://algovision-nine.vercel.app">
+    <img src="https://img.shields.io/badge/Live_Demo-algovision--nine.vercel.app-1989360?style=for-the-badge&logo=vercel" alt="Live Demo" />
+  </a>
+  <br/><br/>
   
   <p>
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -15,15 +21,17 @@
 
 ## 📖 Overview
 
-**AlgoVision** is a cutting-edge web application designed to visualize complex algorithms beautifully and interactively. Built with a modern tech stack, this application allows users to experience algorithms in real-time with an elegant UI and robust performance.
+**AlgoVision** is a cutting-edge web application designed to visualize complex programming algorithms beautifully and interactively. Built with a modern tech stack and styled with a stunning **frosted glassmorphism dark theme**, this application allows developers and computer science students to experience algorithms in real-time with an elegant, agency-grade UI.
 
-## ✨ Features
+🌐 **Experience it live:** [algovision-nine.vercel.app](https://algovision-nine.vercel.app)
 
-- **Interactive Visualization:** Observe algorithms step-by-step.
-- **Modern Tech Stack:** Leveraging React, Vite, and TypeScript.
-- **Beautiful UI:** Customized themes with Tailwind CSS and shadcn/ui.
-- **State Management:** Seamless user experience powered by Zustand and React Query.
-- **Analytics & Data:** Real-time data visualization with Recharts.
+## ✨ Core Features
+
+- 🎨 **Premium Glassmorphism UI:** Sophisticated dark mode with translucent floating panels, deep shadows, and rich gradient accents.
+- 📊 **Array Sorting Algorithms:** Watch Quick Sort, Merge Sort, Insertion Sort, Bubble Sort, and Binary Search execute step-by-step with glowing active states and live color coding.
+- 🕸️ **Graph & Pathfinding Capabilities:** Interactively draw nodes, map edges, and visualize algorithms like Dijkstra's, A*, DFS, BFS, Kruskal's, and Prim's.
+- ⏱️ **Interactive Playback Controls:** A sleek, pill-shaped control bar allows you to play, pause, and step through algorithms at your own pace.
+- 🛠️ **Live Execution State:** Real-time variable tracking and glowing pseudocode highlights precisely what the algorithmic engine is doing right now.
 
 ## 🛠️ Built With
 
@@ -31,46 +39,30 @@
 - **Build Tool:** [Vite](https://vitejs.dev/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Components:** [shadcn/ui](https://ui.shadcn.com/)
-- **Routing:** [React Router DOM](https://reactrouter.com/)
 - **State Management:** [Zustand](https://github.com/pmndrs/zustand)
 - **Data Fetching:** [React Query](https://tanstack.com/query)
-- **Testing:** [Playwright](https://playwright.dev/) & [Vitest](https://vitest.dev/)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+You'll need Node.js and a package manager like `npm` or `yarn` installed.
 
-You'll need Node.js and a package manager like `npm` or `yarn` installed on your machine.
+### Installation & Local Setup
 
-### Installation
-
-1. Install dependencies:
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. Start the development server:
+2. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-3. Build for production:
+3. **Build for production:**
    ```bash
    npm run build
    ```
-
-## 🧪 Testing
-
-Run standard tests using Vitest:
-```bash
-npm run test
-```
-
-Run end-to-end testing with Playwright:
-```bash
-npx playwright test
-```
 
 ## 📜 License
 

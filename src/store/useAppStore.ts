@@ -141,11 +141,10 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   runVisualization: () => {
     const { graph, sourceNode, targetNode, selectedAlgorithm, array } = get();
-    const isArrayAlgo = ['bubblesort', 'binarysearch'].includes(selectedAlgorithm);
+    const isArrayAlgo = ARRAY_ALGORITHMS.includes(selectedAlgorithm);
 
     let steps: AlgorithmStep[] = [];
     if (isArrayAlgo) {
-      // @ts-expect-error: TypeScript gets confused by the union type of Graph | number[] required by the algorithms Map
       steps = runAlgorithm(selectedAlgorithm, array);
     } else {
       if (!sourceNode) return;
