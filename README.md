@@ -1,11 +1,3 @@
-# AlgoVision
-
-<h1 align="center">
-  <img src="public/logo.svg" alt="AlgoVision Logo" width="120" />
-  <br />
-  <strong>Advanced Algorithm Visualizer</strong>
-</h1>
-
 <div align="center">
   
   <h1>✨ AlgoVision ✨</h1>
