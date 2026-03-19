@@ -90,6 +90,6 @@ For licensing inquiries, please contact: license@algovision.dev
 
 **Made with ❤️ by the AlgoVision Team**
 
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/algovision?style=social)](https://github.com/dustin04x/algovision)
+[![GitHub Stars](https://img.shields.io/github/stars/dustin04x/algovision?style=social)](https://github.com/dustin04x/algovision)
 
 </div>
